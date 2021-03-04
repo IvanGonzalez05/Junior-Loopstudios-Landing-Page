@@ -1,0 +1,172 @@
+/* Styles given by the challenge */
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+.attribution {
+    color: white;
+    font-size: 11px; 
+    text-align: center; 
+    padding-bottom: 15px;
+    background-color: black;
+}
+
+.attribution a { 
+    color: orange; 
+}
+
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.main-container{
+    min-width: 338px;
+}
+
+h2, .image-description{
+    text-transform: uppercase;
+}
+
+/* Styles for the landing section of the project (mobile styles) */
+.first-section{
+    color: white;
+    min-width: 375px;
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/mobile/image-hero.jpg);
+}
+
+.navbar{
+    display: flex;
+    padding: 29px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.title-container{
+    font-size: 20px;
+}
+
+.slogan{
+    width: 75%;
+    padding: 7%;
+    font-size: 2rem;
+    min-height: 175px;
+    margin: 30% auto 0;
+    border: 2px solid white;
+}
+
+/*  Styles for the VR section of mobile */
+.vr-info{
+    width: 80%;
+    margin: 0 auto 9%;
+}
+
+.vr-image-desktop{
+    display: none;
+}
+
+.vr-image-mobile{
+    width: 100%;
+    margin: 14% auto 5%;
+}
+
+.description-title{
+    width: 87%;
+    margin: 0 auto;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.description-paragraph{
+    width: 80%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+/* Our creations*/
+.creations{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.see-all-button-desktop{
+    display: none;
+}
+
+.with-text{
+    width: 100%;
+    margin: 2% auto;
+    position: relative;
+}
+
+.with-text img{
+    width: 100%;
+}
+
+.with-text p {
+    width: 47%;
+    z-index: 1;
+    left: 12px;
+    bottom: 12px;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+.see-all-button-mobile{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 4% 0 8%;
+    background-color: white;
+}
+
+/*   Footer   */
+.footer{
+    padding: 15px;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer .website-info .logo{
+    width: 70%;
+    display: block;
+    margin: 5% auto 2%;
+}
+
+.footer-link-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-link-container a{
+    margin: 2%;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icons{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons img{
+    margin: 0 10px;
+}
