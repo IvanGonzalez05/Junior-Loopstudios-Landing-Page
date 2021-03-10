@@ -1,6 +1,6 @@
 /* Styles given by the challenge */
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 .attribution {
     color: white;
@@ -8,6 +8,7 @@
     text-align: center; 
     padding-bottom: 15px;
     background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .attribution a { 
@@ -15,40 +16,27 @@
 }
 
 /* Common Styles */
-* {
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
-
+/**/
 .main-container{
     min-width: 338px;
+    height: 100vh;
 }
 
-h2, .image-description{
-    text-transform: uppercase;
-}
-
-/* Styles for the landing section of the project (mobile styles) */
-.first-section{
+/*** landing section ***/
+.landing-section{
     color: white;
     min-width: 375px;
     min-height: 600px;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./images/mobile/image-hero.jpg);
-}
-
-.navbar{
-    display: flex;
-    padding: 29px;
-    align-content: center;
-    justify-content: space-between;
-}
-
-.title-container{
-    font-size: 20px;
 }
 
 .slogan{
@@ -58,6 +46,50 @@ h2, .image-description{
     min-height: 175px;
     margin: 30% auto 0;
     border: 2px solid white;
+}
+
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 2%;
+}
+
+nav .header{
+    margin: 4%;
+}
+
+nav .main-menu{
+    display: flex;
+    list-style: none;
+}
+
+nav .main-menu, li a{
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav .main-menu li a:hover{
+    text-decoration: underline;
+}
+
+nav .open-menu {
+    margin: 6%;
+    display: none;
+    cursor: pointer;
+}
+
+nav .main-menu .close-menu{
+    display: none;
+    cursor: pointer;
+}
+
+nav .main-title{
+    margin: 6px;
+    cursor: pointer;
 }
 
 /*  Styles for the VR section of mobile */
@@ -107,6 +139,7 @@ h2, .image-description{
     width: 100%;
     margin: 2% auto;
     position: relative;
+    text-transform: uppercase;
 }
 
 .with-text img{
@@ -169,4 +202,45 @@ h2, .image-description{
 
 .footer-icons img{
     margin: 0 10px;
+}
+@media only screen and (max-width: 800px){
+    nav .main-menu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        transition: top 1000ms ease;
+        display: none;
+        padding: 15%;
+    }
+
+    nav .main-menu li {
+        margin: 4% 0;
+    }
+
+    nav .main-menu li a {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+
+    nav .main-menu .close-menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 25%;
+    }
+
+    nav .main-menu .close-menu .logo-hamburger, nav .main-menu .close-menu .close-icon{
+        margin-top: 0;
+    }
+    nav .open-menu{
+        display: block;
+    }
 }
