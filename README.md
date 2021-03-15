@@ -37,6 +37,9 @@ You will find all the required assets in the `/images` folder. The assets are al
 
 There is also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
 
+## GitHub Pages
+https://betoggh51.github.io/Junior---LoopStudios-Landing-Page/
+
 ## Giving feedback
 
 Feedback is always welcome, so if you have any to give on this challenge please email hi[at]frontendmentor[dot]io.
