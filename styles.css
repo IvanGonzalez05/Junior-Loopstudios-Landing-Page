@@ -24,20 +24,19 @@
 
 /*** landing section ***/
 .landing-section{
+    padding: 5%;
     color: white;
-    min-height: 635px;
-    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./images/mobile/image-hero.jpg);
+    background-image: url(./images/desktop/image-hero.jpg);
 }
 
 .slogan{
-    width: 75%;
-    padding: 7%;
+    width: 30%;
+    padding: 4%;
     font-size: 2rem;
     min-height: 175px;
-    margin: 90px auto 0;
+    margin: 30px 4% 0;
     border: 2px solid white;
 }
 
@@ -64,8 +63,9 @@ nav .main-menu, li a{
     color: white;
 }
 
-nav .main-menu li a:hover{
+a:hover, div .footer-icons{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 nav .open-menu {
@@ -84,19 +84,28 @@ nav .main-title{
     cursor: pointer;
 }
 
-/*  Styles for the VR section of mobile */
 .vr-info{
-    width: 80%;
-    margin: 0 auto 9%;
-}
-
-.vr-image-desktop{
-    display: none;
+    width: 70%;
+    display: flex;
+    margin: 0 auto 3%;
+    align-items: center;
 }
 
 .vr-image-mobile{
-    width: 100%;
-    margin: 14% auto 5%;
+    display: none;
+}
+
+.vr-image-desktop{
+    width: 60%;
+    margin: 10% auto 5%;
+}
+
+.description-container{
+    align-self: flex-end;
+    margin-bottom: 4%;
+    margin-left: -100px;
+    background-color: white;
+    padding: 5%;
 }
 
 .description-title{
@@ -105,6 +114,7 @@ nav .main-title{
     font-size: 28px;
     text-align: center;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .description-paragraph{
@@ -117,14 +127,43 @@ nav .main-title{
 .creations{
     width: 80%;
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 4%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-.see-all-button-desktop{
+.creations-title{
+    text-transform: uppercase;
+}
+
+.title-and-button-container{
+    width: 87%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.button:hover{
+    color: white;
+    cursor: pointer;
+    background-color: black;
+}
+
+.see-all-button-mobile{
     display: none;
+}
+
+.creations-images-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
 }
 
 .with-text{
@@ -138,6 +177,19 @@ nav .main-title{
     width: 100%;
 }
 
+.with-text img:hover{
+    filter: opacity(50%);
+    cursor: pointer;
+}
+
+.creation-desktop{
+    height: 500px;
+}
+
+.creation-mobile{
+    display: none;
+}
+
 .with-text p {
     width: 47%;
     z-index: 1;
@@ -148,21 +200,14 @@ nav .main-title{
     position: absolute;
 }
 
-.see-all-button-mobile{
-    text-transform: uppercase;
-    padding: 10px 20px;
-    margin: 4% 0 8%;
-    background-color: white;
-}
-
 /*   Footer   */
 .footer{
     padding: 15px;
     display: flex;
     color: white;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     background-color: black;
 }
 
@@ -175,7 +220,6 @@ nav .main-title{
 .footer-link-container{
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -201,6 +245,19 @@ nav .main-title{
     html, body {
         max-width: 100%;
         overflow-x: hidden;
+    }
+
+        /*** landing section ***/
+    .landing-section{
+        min-height: 635px;
+        background-image: url(./images/mobile/image-hero.jpg);
+    }
+
+    .slogan{
+        width: 75%;
+        padding: 7%;
+        min-height: 175px;
+        margin: 90px auto 0;
     }
 
     nav{
@@ -245,5 +302,66 @@ nav .main-title{
     }
     nav .open-menu{
         display: block;
+    }
+
+    /****** VR SECTION ********/
+    .vr-info{
+        width: 90%;
+        margin-bottom: 9%;
+        flex-direction: column;
+    }
+
+    .vr-image-desktop{
+        display: none;
+    }
+    
+    .vr-image-mobile{
+        display: initial;
+        width: 100%;
+        margin: 14% auto 5%;
+    }
+
+    .description-container{
+        margin: 0;
+    }
+
+    /****** OUR CREATIONS ******/
+    .see-all-button-desktop{
+        display: none;
+    }
+
+    .see-all-button-mobile{
+        display: initial;
+    }
+
+    .button{
+        margin: 4% 0 8%;
+    }
+
+    .creations-images-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .creation-mobile{
+        display: initial;
+    }
+
+    .creation-desktop{
+        display: none;
+    }
+
+    /******* FOOTER *******/
+    .footer{
+        padding: 15px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-link-container{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 }

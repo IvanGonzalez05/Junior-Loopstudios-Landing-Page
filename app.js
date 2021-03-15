@@ -1,7 +1,9 @@
+/** Constants that handles the hamburger menu */
 const mainMenu = document.querySelector('.main-menu');
 const closeMenu = document.querySelector('.close-menu');
 const openMenu = document.querySelector('.open-menu');
 
+/** Events that handles hamburger menu */
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
 
@@ -13,3 +15,4 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%'
 }
+
