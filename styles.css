@@ -15,24 +15,17 @@
     color: orange; 
 }
 
-/* Common Styles */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
 }
-/**/
-.main-container{
-    min-width: 338px;
-    height: 100vh;
-}
 
 /*** landing section ***/
 .landing-section{
     color: white;
-    min-width: 375px;
-    min-height: 600px;
+    min-height: 635px;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,7 +37,7 @@
     padding: 7%;
     font-size: 2rem;
     min-height: 175px;
-    margin: 30% auto 0;
+    margin: 90px auto 0;
     border: 2px solid white;
 }
 
@@ -53,7 +46,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10% 2%;
 }
 
 nav .header{
@@ -203,7 +195,18 @@ nav .main-title{
 .footer-icons img{
     margin: 0 10px;
 }
+
+/******************** MOBILE VERSION *******************/
 @media only screen and (max-width: 800px){
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav{
+        padding: 10% 2%;
+    }
+
     nav .main-menu{
         height: 100vh;
         position: fixed;
