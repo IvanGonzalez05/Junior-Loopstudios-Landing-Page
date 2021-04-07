@@ -8,8 +8,6 @@ Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
-**To do this challenge, you need a good understanding of HTML and CSS and a basic understanding of JavaScript.**
-
 ## The challenge
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.
@@ -37,8 +35,8 @@ You will find all the required assets in the `/images` folder. The assets are al
 
 There is also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
 
-## GitHub Pages
-https://betoggh51.github.io/Junior---LoopStudios-Landing-Page/
+## Solution URL:
+- https://ivangonzalez05.github.io/Junior-Loopstudios-Landing-Page/.
 
 ## Giving feedback
 
