@@ -4,11 +4,20 @@
 
 ## Welcome! 👋
 
-Thanks for checking out this front-end coding challenge.
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+## Table of contents
 
-## The challenge
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Where to find everything](#where-to-find-everything)
+  - [Solution](#solution)
+  - [Built with](#built-with)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The challenge
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.
 
@@ -23,7 +32,7 @@ Your users should be able to:
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
-## Where to find everything
+### Where to find everything
 
 Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to.
 
@@ -35,13 +44,15 @@ You will find all the required assets in the `/images` folder. The assets are al
 
 There is also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
 
-## Solution URL:
+### Solution URL:
 - https://ivangonzalez05.github.io/Junior-Loopstudios-Landing-Page/.
 
-## Giving feedback
+## My process
 
-Feedback is always welcome, so if you have any to give on this challenge please email hi[at]frontendmentor[dot]io.
+### Built with
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+- Semantic HTML5 markup
+- CSS Grid
 
-**Have fun building!** 🚀
+## Acknowledgments
+Thanks to Front End Mentor to provide this fun challenge where I learned CSS Grid. Also thanks to the great community and all of its support
