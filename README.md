@@ -52,7 +52,8 @@ There is also a `style-guide.md` file, which contains the information you'll nee
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Grid
+- CSS
+- JS
 
 ## Acknowledgments
 Thanks to Front End Mentor to provide this fun challenge where I learned CSS Grid. Also thanks to the great community and all of its support
