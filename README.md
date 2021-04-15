@@ -11,7 +11,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Where to find everything](#where-to-find-everything)
-  - [Solution](#solution)
+  - [Solution](#solution-url)
   - [Built with](#built-with)
 - [Acknowledgments](#acknowledgments)
 
